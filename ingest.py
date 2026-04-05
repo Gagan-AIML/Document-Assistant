@@ -4,7 +4,7 @@ from langchain_core.documents import Document
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-file_path ="D:\\Personal AI Research AI\\Data\\short stories.pdf"
+file_path ="FILE PATH"
 loader=PyPDFLoader(file_path)
 docs=loader.load()
 
@@ -13,7 +13,7 @@ chunks=text_splittre.split_documents(docs)
 print(f"Total Pages: {len(docs)}")
 print(f"Total Chunks: {len(chunks)}")
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCSIUDQxkesEhqQulNnTpMQoOfDXvIoGjA"
+os.environ["GOOGLE_API_KEY"] = "API KEY"
 
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 embeddings = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")

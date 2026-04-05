@@ -14,7 +14,7 @@ st.set_page_config(page_title="Universal AI Doc Assistant", layout="wide")
 st.title("🤖 Universal AI Document Partner")
 
 # Set your API Key (Best practice: use st.secrets or .env)
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCSIUDQxkesEhqQulNnTpMQoOfDXvIoGjA"
+os.environ["GOOGLE_API_KEY"] = "API KEY"
 
 # Define directories
 DB_DIR = "chroma_db"
