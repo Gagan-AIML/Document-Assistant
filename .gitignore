@@ -2,7 +2,7 @@
 .env
 __pycache__/
 
-# Ignore the local Vector Database (it's too big for Git)
+# Ignore the local Vector Database
 chroma_db/
 
 # Ignore temporary uploads
