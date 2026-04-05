@@ -1,0 +1,13 @@
+# Ignore API Keys
+.env
+__pycache__/
+
+# Ignore the local Vector Database (it's too big for Git)
+chroma_db/
+
+# Ignore temporary uploads
+tempDir/
+
+# Virtual Environment
+venv/
+.venv/
