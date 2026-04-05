@@ -5,7 +5,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCSIUDQxkesEhqQulNnTpMQoOfDXvIoGjA"
+os.environ["GOOGLE_API_KEY"] = "API KEY"
 embeddings=GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
 vector_db=Chroma(persist_directory="chroma_db",embedding_function=embeddings)
 
