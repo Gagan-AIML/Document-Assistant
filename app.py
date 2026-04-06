@@ -46,7 +46,7 @@ def process_document(file_path):
     chunks = splitter.split_documents(docs)
     
     # Embed & Store (Using latest stable embedding model)
-    embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
+    embeddings = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
     vector_db = Chroma.from_documents(
         documents=chunks, 
         embedding=embeddings, 
@@ -56,7 +56,7 @@ def process_document(file_path):
 
 def get_rag_chain(vector_db):
     """Handles Phase 3: Setting up the Chat Brain"""
-    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.5)
+    llm=ChatGoogleGenerativeAI(model="gemini-3-flash-preview",temperature=0.5)
     
     system_prompt = (
         "You are an expert assistant. Use the provided context to answer the question. "
